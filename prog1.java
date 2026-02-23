@@ -9,5 +9,6 @@ class prog1 {
         System.out.println("Checking if jar is not generated");
         System.out.println("Trying now with changes");
         System.out.println("Why?????????????????");
+        System.out.println("Nothing should be printed now");
     }
 } 
