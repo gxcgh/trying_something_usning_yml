@@ -10,5 +10,6 @@ class prog1 {
         System.out.println("Trying now with changes");
         System.out.println("Why?????????????????");
         System.out.println("Nothing should be printed now");
+        System.out.println("Nothing should be printed now, right?");
     }
 } 
