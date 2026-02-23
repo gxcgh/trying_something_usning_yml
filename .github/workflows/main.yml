@@ -21,10 +21,10 @@ jobs:
       - name: Compile and package executable JAR
         run: |
           javac prog1.java
-          jar cfe app.jar-${{github.run_number}} prog1 prog1.class
+          jar cfe app-${{github.run_number}}.jar prog1 prog1.class
 
       - name: Upload JAR
         uses: actions/upload-artifact@v4
         with:
           name: app-jar-${{github.run_number}}
-          path: app.jar-${{github.run_number}}
+          path: app-${{github.run_number}}.jar
