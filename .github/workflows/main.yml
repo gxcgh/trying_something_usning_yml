@@ -18,11 +18,10 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Compile Java
+      - name: Compile and package executable JAR
         run: |
-          mkdir out
-          javac -d out prog1.java
-          jar --create --file app.jar -C out .
+          javac prog1.java
+          jar cfe app.jar prog1 prog1.class
 
       - name: Upload JAR
         uses: actions/upload-artifact@v4
