@@ -26,5 +26,5 @@ jobs:
       - name: Upload JAR
         uses: actions/upload-artifact@v4
         with:
-          name: app-jar
+          name: app-jar-${{github.run_number}}
           path: app.jar
